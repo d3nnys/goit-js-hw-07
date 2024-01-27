@@ -1,0 +1,19 @@
+li,
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px 24px;
+
+  margin: 0 auto;
+  width: clamp(1000px, 95vw, 1400px);
+}
