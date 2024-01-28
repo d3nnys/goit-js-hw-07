@@ -1,1 +1,16 @@
+#name-input {
+  height: 40px;
+  width: 360px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+}
 
+#name-input::placeholder {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04rem;
+  color: #2e2f42;
+}

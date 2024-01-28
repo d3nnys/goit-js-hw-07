@@ -1,0 +1,14 @@
+img {
+  display: block;
+  object-fit: cover;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px 24px;
+
+  margin: 0 auto;
+  width: clamp(1000px, 95vw, 1400px);
+}

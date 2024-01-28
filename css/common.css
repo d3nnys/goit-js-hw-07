@@ -12,3 +12,9 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+li,
+ul {
+  list-style-type: none;
+  padding: 0;
+}

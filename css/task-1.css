@@ -6,12 +6,6 @@
   background-color: #ffffff;
 }
 
-li,
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 .item {
   padding: 16px;
   border-radius: 8px;
