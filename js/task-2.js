@@ -1,5 +1,25 @@
 'use strict';
 
+const list = document.querySelector('.gallery');
+
+function addNewElements({ url, alt }) {
+  const item = document.createElement('li');
+  const image = document.createElement('img');
+  image.src = url;
+  image.alt = alt;
+  image.width = 360;
+  image.height = 300;
+
+  item.append(image);
+
+  return item;
+}
+
+const portfolio = images.map(addNewElements);
+console.log(portfolio);
+
+portfolio.forEach(element => list.append(element));
+
 const images = [
   {
     url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -26,23 +46,3 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
-
-const list = document.querySelector('.gallery');
-
-function addNewElements({ url, alt }) {
-  const item = document.createElement('li');
-  const image = document.createElement('img');
-  image.src = url;
-  image.alt = alt;
-  image.width = 360;
-  image.height = 300;
-
-  item.append(image);
-
-  return item;
-}
-
-const portfolio = images.map(addNewElements);
-console.log(portfolio);
-
-portfolio.forEach(element => list.append(element));
