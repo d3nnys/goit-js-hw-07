@@ -37,13 +37,13 @@ function destroyBoxes() {
 refs.createBtn.addEventListener('click', () => {
   const amount = parseInt(refs.numberInput.value, 10);
 
-  if (isValidAmount(amount)) {
+  if (validAmount(amount)) {
     createBoxes(amount);
   }
 });
 
 refs.destroyBtn.addEventListener('click', destroyBoxes);
 
-function isValidAmount(amount) {
-  return Number.isInteger(amount) && amount >= 1 && amount <= 100;
+function validAmount(amount) {
+  return amount >= 1 && amount <= 100 && !isNaN(amount);
 }
