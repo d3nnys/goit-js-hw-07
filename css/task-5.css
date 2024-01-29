@@ -1,7 +1,6 @@
 .widget {
   padding: 100px 60px;
   max-width: 343px;
-  margin: 0 auto;
 }
 
 .widget > p {

@@ -9,6 +9,7 @@ img {
   justify-content: center;
   gap: 48px 24px;
 
+  padding: 20px 0;
   margin: 0 auto;
   width: clamp(1000px, 95vw, 1400px);
 }
