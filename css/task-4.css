@@ -23,6 +23,18 @@
   width: 360px;
   height: 40px;
   margin-bottom: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.login-form > label > input:hover {
+  border-color: #000000;
+}
+
+.login-form > label > input:active {
+  border-color: #808080;
+  color: #2e2f42;
 }
 
 .login-form > label > input[name='password'] {
@@ -49,4 +61,10 @@
   color: #fff;
 
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.login-form > button:hover,
+.login-form > button:focus {
+  background-color: #6c8cff;
 }

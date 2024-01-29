@@ -24,3 +24,18 @@ function onFormSubmit(event) {
 
   form.reset();
 }
+
+// const inputs = document.querySelectorAll('input');
+// inputs.forEach(input => {
+//   input.addEventListener('focus', function () {
+//     input.value = 'Type area';
+//   });
+// });
+
+// inputs.forEach(input => {
+//   input.addEventListener('blur', function () {
+//     if (input.value === 'Type area') {
+//       input.value = '';
+//     }
+//   });
+// });
